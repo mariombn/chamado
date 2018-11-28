@@ -72,6 +72,7 @@
     <Compile Include="Services\ChamadoService.cs" />
     <Compile Include="Services\LoginService.cs" />
     <Compile Include="Services\UsuarioService.cs" />
+    <Compile Include="Services\Util.cs" />
     <Compile Include="Views\ChamadoDetalhes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +135,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="migrate\script.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

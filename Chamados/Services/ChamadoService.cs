@@ -12,8 +12,7 @@ namespace Chamados.Services
     {
         public bool criarChamado(string titulo, string descricao, int usuarioId)
         {
-            var connString = "Server=localhost;Database=chamado;Uid=root;Pwd=local";
-            var connection = new MySqlConnection(connString);
+            var connection = Util.getConnection();
             var command = connection.CreateCommand();
             string data = DateTime.Now.ToString("yyyy-MM-dd");
             string hora = DateTime.Now.ToString("HH:mm");
@@ -29,8 +28,7 @@ namespace Chamados.Services
         public List<ChamadoEntity> listarTodos()
         {
             List<ChamadoEntity> chamados = new List<ChamadoEntity>();
-            var connString = "Server=localhost;Database=chamado;Uid=root;Pwd=local";
-            var connection = new MySqlConnection(connString);
+            var connection = Util.getConnection();
             var command = connection.CreateCommand();
             string idnumber;
             idnumber = "0";
@@ -50,7 +48,14 @@ namespace Chamados.Services
                     chamado.criacaoData = reader.GetValue(4).ToString();
                     chamado.criacaoHora = reader.GetValue(5).ToString();
                     chamado.criacaoUserId = Int32.Parse(reader.GetValue(6).ToString());
-                    //chamado.userId = Int32.Parse(reader.GetValue(7).ToString()); // TODO: Precisa ver como fazer para tratar o valor que está NULL no banco
+                    if (reader.GetValue(7).ToString() != "")
+                    {
+                        chamado.userId = Int32.Parse(reader.GetValue(7).ToString());
+                    }
+                    else
+                    {
+                        chamado.userId = 0;
+                    }
                     chamados.Add(chamado);
                 }
             }
@@ -64,8 +69,7 @@ namespace Chamados.Services
 
         public ChamadoEntity obterPorId(int id)
         {
-            var connString = "Server=localhost;Database=chamado;Uid=root;Pwd=local";
-            var connection = new MySqlConnection(connString);
+            var connection = Util.getConnection();
             var command = connection.CreateCommand();
             string idnumber;
             idnumber = "0";
@@ -103,8 +107,7 @@ namespace Chamados.Services
 
         public bool atendeChamado(int chamadoId, int userId)
         {
-            var connString = "Server=localhost;Database=chamado;Uid=root;Pwd=local";
-            var connection = new MySqlConnection(connString);
+            var connection = Util.getConnection();
             var command = connection.CreateCommand();
             string data = DateTime.Now.ToString("yyyy-MM-dd");
             string hora = DateTime.Now.ToString("HH:mm");
@@ -118,8 +121,7 @@ namespace Chamados.Services
 
         public bool fechaChamado(int chamadoId)
         {
-            var connString = "Server=localhost;Database=chamado;Uid=root;Pwd=local";
-            var connection = new MySqlConnection(connString);
+            var connection = Util.getConnection();
             var command = connection.CreateCommand();
             string data = DateTime.Now.ToString("yyyy-MM-dd");
             string hora = DateTime.Now.ToString("HH:mm");

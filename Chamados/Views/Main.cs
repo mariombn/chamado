@@ -55,5 +55,10 @@ namespace Chamados.Views
             filaDeChamado.MdiParent = this;
             filaDeChamado.Show();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

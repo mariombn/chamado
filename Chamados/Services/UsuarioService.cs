@@ -12,8 +12,7 @@ namespace Chamados.Services
     {
         public UsuarioEntity obterPorId(int id)
         {
-            var connString = "Server=localhost;Database=chamado;Uid=root;Pwd=local";
-            var connection = new MySqlConnection(connString);
+            var connection = Util.getConnection();
             var command = connection.CreateCommand();
             string idnumber;
             idnumber = "0";
