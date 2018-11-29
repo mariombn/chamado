@@ -35,6 +35,11 @@ namespace Chamados.Views
         {
             toolStripStatusLabel.Text = "Logado como: " + this.usuario.login;
             statusStrip.Refresh();
+
+            if (this.GetUsuarioEntity().id != 1)
+            {
+                controleDeUsuáriosToolStripMenuItem.Enabled = false;
+            }
         }
 
         private void mainMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -72,6 +77,18 @@ namespace Chamados.Views
             TrocarSenha trocaSenha = new TrocarSenha(this);
             trocaSenha.MdiParent = this;
             trocaSenha.Show();
+        }
+
+        private void controleDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ControleUsuario controleUsuario = new ControleUsuario();
+            controleUsuario.MdiParent = this;
+            controleUsuario.Show();
+        }
+
+        private void meusChamadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

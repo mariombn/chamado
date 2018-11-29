@@ -37,14 +37,12 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chamadosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirChamadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.meusChamadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filaDeChamadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.minhaFIlaDeChamadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.segurançaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trocarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.trocarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -98,9 +96,7 @@
             // 
             this.chamadosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.abrirChamadoToolStripMenuItem,
-            this.meusChamadosToolStripMenuItem,
-            this.filaDeChamadoToolStripMenuItem,
-            this.minhaFIlaDeChamadoToolStripMenuItem});
+            this.filaDeChamadoToolStripMenuItem});
             this.chamadosToolStripMenuItem1.Name = "chamadosToolStripMenuItem1";
             this.chamadosToolStripMenuItem1.Size = new System.Drawing.Size(76, 20);
             this.chamadosToolStripMenuItem1.Text = "Chamados";
@@ -112,24 +108,12 @@
             this.abrirChamadoToolStripMenuItem.Text = "Novo Chamado";
             this.abrirChamadoToolStripMenuItem.Click += new System.EventHandler(this.abrirChamadoToolStripMenuItem_Click);
             // 
-            // meusChamadosToolStripMenuItem
-            // 
-            this.meusChamadosToolStripMenuItem.Name = "meusChamadosToolStripMenuItem";
-            this.meusChamadosToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.meusChamadosToolStripMenuItem.Text = "Meus Chamados";
-            // 
             // filaDeChamadoToolStripMenuItem
             // 
             this.filaDeChamadoToolStripMenuItem.Name = "filaDeChamadoToolStripMenuItem";
             this.filaDeChamadoToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.filaDeChamadoToolStripMenuItem.Text = "Fila de Chamado";
             this.filaDeChamadoToolStripMenuItem.Click += new System.EventHandler(this.filaDeChamadoToolStripMenuItem_Click);
-            // 
-            // minhaFIlaDeChamadoToolStripMenuItem
-            // 
-            this.minhaFIlaDeChamadoToolStripMenuItem.Name = "minhaFIlaDeChamadoToolStripMenuItem";
-            this.minhaFIlaDeChamadoToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.minhaFIlaDeChamadoToolStripMenuItem.Text = "Minha fila de Chamado";
             // 
             // segurançaToolStripMenuItem
             // 
@@ -143,8 +127,16 @@
             // controleDeUsuáriosToolStripMenuItem
             // 
             this.controleDeUsuáriosToolStripMenuItem.Name = "controleDeUsuáriosToolStripMenuItem";
-            this.controleDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.controleDeUsuáriosToolStripMenuItem.Text = "Controle de Usuários";
+            this.controleDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.controleDeUsuáriosToolStripMenuItem.Text = "Cadastrar Usuário";
+            this.controleDeUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.controleDeUsuáriosToolStripMenuItem_Click);
+            // 
+            // trocarSenhaToolStripMenuItem
+            // 
+            this.trocarSenhaToolStripMenuItem.Name = "trocarSenhaToolStripMenuItem";
+            this.trocarSenhaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trocarSenhaToolStripMenuItem.Text = "Trocar Senha";
+            this.trocarSenhaToolStripMenuItem.Click += new System.EventHandler(this.trocarSenhaToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -160,13 +152,6 @@
             this.sobreToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
             this.sobreToolStripMenuItem1.Text = "Sobre";
             this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.sobreToolStripMenuItem1_Click);
-            // 
-            // trocarSenhaToolStripMenuItem
-            // 
-            this.trocarSenhaToolStripMenuItem.Name = "trocarSenhaToolStripMenuItem";
-            this.trocarSenhaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.trocarSenhaToolStripMenuItem.Text = "Trocar Senha";
-            this.trocarSenhaToolStripMenuItem.Click += new System.EventHandler(this.trocarSenhaToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -200,9 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem abrirChamadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem segurançaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem meusChamadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem filaDeChamadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem minhaFIlaDeChamadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controleDeUsuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem trocarSenhaToolStripMenuItem;
