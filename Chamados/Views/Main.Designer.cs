@@ -44,6 +44,7 @@
             this.controleDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.trocarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
@@ -52,9 +53,9 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 454);
+            this.statusStrip.Location = new System.Drawing.Point(0, 648);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(734, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1095, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -73,7 +74,7 @@
             this.sobreToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(734, 24);
+            this.mainMenu.Size = new System.Drawing.Size(1095, 24);
             this.mainMenu.TabIndex = 4;
             this.mainMenu.Text = "menuStrip1";
             this.mainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mainMenu_ItemClicked);
@@ -89,7 +90,7 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -133,7 +134,8 @@
             // segurançaToolStripMenuItem
             // 
             this.segurançaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.controleDeUsuáriosToolStripMenuItem});
+            this.controleDeUsuáriosToolStripMenuItem,
+            this.trocarSenhaToolStripMenuItem});
             this.segurançaToolStripMenuItem.Name = "segurançaToolStripMenuItem";
             this.segurançaToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.segurançaToolStripMenuItem.Text = "Segurança";
@@ -157,12 +159,20 @@
             this.sobreToolStripMenuItem1.Name = "sobreToolStripMenuItem1";
             this.sobreToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
             this.sobreToolStripMenuItem1.Text = "Sobre";
+            this.sobreToolStripMenuItem1.Click += new System.EventHandler(this.sobreToolStripMenuItem1_Click);
+            // 
+            // trocarSenhaToolStripMenuItem
+            // 
+            this.trocarSenhaToolStripMenuItem.Name = "trocarSenhaToolStripMenuItem";
+            this.trocarSenhaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.trocarSenhaToolStripMenuItem.Text = "Trocar Senha";
+            this.trocarSenhaToolStripMenuItem.Click += new System.EventHandler(this.trocarSenhaToolStripMenuItem_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 476);
+            this.ClientSize = new System.Drawing.Size(1095, 670);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.mainMenu);
             this.IsMdiContainer = true;
@@ -195,6 +205,7 @@
         private System.Windows.Forms.ToolStripMenuItem minhaFIlaDeChamadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controleDeUsuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem trocarSenhaToolStripMenuItem;
     }
 }
 

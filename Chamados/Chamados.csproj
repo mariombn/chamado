@@ -79,6 +79,12 @@
     <Compile Include="Views\ChamadoDetalhes.Designer.cs">
       <DependentUpon>ChamadoDetalhes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ControleUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ControleUsuario.Designer.cs">
+      <DependentUpon>ControleUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FilaDeChamados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,18 @@
     <Compile Include="Views\novoChamado.Designer.cs">
       <DependentUpon>novoChamado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\sobre.Designer.cs">
+      <DependentUpon>sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrocarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TrocarSenha.Designer.cs">
+      <DependentUpon>TrocarSenha.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +130,9 @@
     <EmbeddedResource Include="Views\ChamadoDetalhes.resx">
       <DependentUpon>ChamadoDetalhes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ControleUsuario.resx">
+      <DependentUpon>ControleUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FilaDeChamados.resx">
       <DependentUpon>FilaDeChamados.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\novoChamado.resx">
       <DependentUpon>novoChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sobre.resx">
+      <DependentUpon>sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TrocarSenha.resx">
+      <DependentUpon>TrocarSenha.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

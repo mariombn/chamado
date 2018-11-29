@@ -60,5 +60,18 @@ namespace Chamados.Views
         {
             Application.Exit();
         }
+
+        private void sobreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            sobre sobre = new sobre();
+            sobre.Show();
+        }
+
+        private void trocarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TrocarSenha trocaSenha = new TrocarSenha(this);
+            trocaSenha.MdiParent = this;
+            trocaSenha.Show();
+        }
     }
 }
